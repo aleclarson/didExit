@@ -1,0 +1,13 @@
+{
+  "name": "didExit",
+  "version": "1.0.0",
+  "main": "js/src/didExit",
+  "dependencies": {
+    "Event": "aleclarson/Event#2.0.0"
+  },
+  "lotus": {
+    "plugins": [
+      "lotus-coffee"
+    ]
+  }
+}
