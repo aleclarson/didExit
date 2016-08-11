@@ -13,9 +13,16 @@ process.once("SIGTERM", function() {
 });
 
 process.once("exit", function(code) {
-  return didExit.emit(code);
+  var error;
+  try {
+    return didExit.emit(code);
+  } catch (error1) {
+    error = error1;
+    console.log(code);
+    return console.error(error);
+  }
 });
 
 module.exports = didExit;
 
-//# sourceMappingURL=../../map/src/didExit.map
+//# sourceMappingURL=map/didExit.map

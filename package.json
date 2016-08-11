@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "js/src/didExit",
   "dependencies": {
-    "Event": "aleclarson/Event#2.0.0"
+    "Event": "aleclarson/Event#2.0.1"
   },
   "lotus": {
     "plugins": [
