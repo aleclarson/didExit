@@ -1,7 +1,7 @@
 
 Event = require "Event"
 
-didExit = Event()
+didExit = Event {async: no}
 
 process.once "SIGINT", ->
   process.exit 130
