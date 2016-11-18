@@ -1,13 +1,15 @@
 {
   "name": "didExit",
-  "version": "1.0.0",
-  "main": "js/src/didExit",
-  "dependencies": {
-    "Event": "aleclarson/Event#2.0.0"
+  "version": "1.0.1",
+  "main": "js/didExit",
+  "plugins": [
+    "lotus-coffee"
+  ],
+  "scripts": {
+    "build": "coffee-build -v 1.11.x -b -o js src",
+    "postinstall": "npm run build"
   },
-  "lotus": {
-    "plugins": [
-      "lotus-coffee"
-    ]
+  "dependencies": {
+    "Event": "aleclarson/Event#2.1.0"
   }
 }
