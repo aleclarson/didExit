@@ -1,0 +1,8 @@
+{
+  "name": "didExit",
+  "version": "1.0.1",
+  "main": "js/didExit",
+  "dependencies": {
+    "Event": "aleclarson/Event#2.1.0"
+  }
+}
