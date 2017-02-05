@@ -1,18 +1,20 @@
 
+isNodeJS = require "isNodeJS"
 Event = require "Event"
 
-didExit = Event {async: no}
+module.exports =
+  didExit = Event()
 
-process.once "SIGINT", ->
-  process.exit 130
+if isNodeJS
 
-process.once "SIGTERM", ->
-  process.exit 143
+  process.once "SIGINT", ->
+    process.exit 130
 
-process.once "exit", (code) ->
-  try didExit.emit code
-  catch error
-    console.log code
-    console.error error
+  process.once "SIGTERM", ->
+    process.exit 143
 
-module.exports = didExit
+  process.once "exit", (code) ->
+    try didExit.emit code
+    catch error
+      console.log code
+      console.error error
