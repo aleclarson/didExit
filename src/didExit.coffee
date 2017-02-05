@@ -3,7 +3,7 @@ isNodeJS = require "isNodeJS"
 Event = require "Event"
 
 module.exports =
-  didExit = Event {async: no}
+  didExit = Event()
 
 if isNodeJS
 
