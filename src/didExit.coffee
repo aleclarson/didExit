@@ -1,6 +1,6 @@
 
 isNodeJS = require "isNodeJS"
-Event = require "Event"
+Event = require "eve"
 
 module.exports =
   didExit = Event()
