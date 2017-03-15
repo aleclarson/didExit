@@ -1,0 +1,9 @@
+{
+  "name": "didExit",
+  "version": "1.1.0",
+  "main": "js/didExit",
+  "dependencies": {
+    "eve": "aleclarson/eve#1.1.0",
+    "isNodeJS": "aleclarson/isNodeJS#2.0.0"
+  }
+}
